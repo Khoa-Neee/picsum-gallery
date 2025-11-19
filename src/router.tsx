@@ -4,6 +4,9 @@ import GalleryPage from './pages/GalleryPage'
 import PhotoDetailsPage from './pages/PhotoDetailsPage'
 import NotFoundPage from './pages/NotFoundPage'
 
+// Use Vite's BASE_URL as basename so routes work under /picsum-gallery/ on GitHub Pages
+const basename = (import.meta.env.BASE_URL || '/').replace(/\/$/, '')
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -27,7 +30,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-])
+], { basename })
 
 export default router
 
