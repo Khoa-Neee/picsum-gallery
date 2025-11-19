@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Không tìm thấy trang – Picsum Gallery</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      body {font-family: system-ui, Arial, sans-serif; margin:0; padding:2rem; background:#f5f6fa; color:#222;}
+      .box {max-width:640px; margin:0 auto; background:#fff; padding:2rem 2.25rem; border:1px solid #ddd; border-radius:16px;}
+      h1 {margin-top:0; font-size:1.75rem;}
+      a {color:#1976d2; text-decoration:none;} a:hover{text-decoration:underline;}
+      code {background:#eee; padding:2px 6px; border-radius:4px; font-size:0.85rem;}
+    </style>
+    <!-- SPA fallback logic: if this is a deep link on GitHub Pages, we just load the base index.html assets.
+         NOTE: For full deep-link support with BrowserRouter you should COPY the built dist/index.html to dist/404.html after build.
+         This static source 404.html only provides a friendly message and a manual link back. -->
+  </head>
+  <body>
+    <div class="box">
+      <h1>404 – Trang không tồn tại</h1>
+      <p>Đường dẫn bạn truy cập không tìm thấy. Nếu bạn đang mở trực tiếp một đường dẫn sâu (ví dụ <code>/photos/123</code>) trên GitHub Pages, hãy cấu hình bước build sao chép <code>dist/index.html</code> thành <code>dist/404.html</code> để React Router xử lý đúng.</p>
+      <p><strong>Quay lại ứng dụng:</strong> <a href="/picsum-gallery/">Về trang chủ</a></p>
+      <hr />
+      <p style="font-size:0.85rem; opacity:0.7;">Mẹo: cập nhật script deploy trong <code>package.json</code> thành:
+        <br/><code>"deploy": "npm run build && node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html')\" && gh-pages -d dist"</code>
+      </p>
+    </div>
+  </body>
+</html>
